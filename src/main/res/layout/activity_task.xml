@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Mildred"
+        android:textSize="25sp" />
+
+    <TableLayout
+        android:id="@+id/task_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#7E807F">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Task"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/task_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="0"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                android:enabled="true"
+                android:onClick="onCheckboxClicked"/>
+            <TextView
+                android:id="@+id/textview_Task1"
+                android:layout_width="-1dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#ffff"
+                android:text="Help in Bathroom"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+
+        </TableRow>
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/task_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="0"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                android:enabled="true"
+                android:onClick="onCheckboxClicked" />
+            <TextView
+                android:id="@+id/textview_Task2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/task_2"
+                android:background="#ffff"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+
+        </TableRow>
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/task_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="0"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                android:enabled="true"
+                android:onClick="onCheckboxClicked" />
+            <TextView
+                android:id="@+id/textview_Task3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/task_3"
+                android:background="#ffff"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/task_table"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="177dp"
+        android:text="Notes:"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_table"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="30dp"
+        android:background="#ffffff">
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_task1"
+
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_task2"
+
+
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_task3"
+
+                />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="60dp"
+        android:text="CHECK SCHEDULE " />
+
+
+</RelativeLayout>
